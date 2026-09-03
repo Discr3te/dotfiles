@@ -1,0 +1,42 @@
+vim.pack.add({ {
+	src = "https://github.com/stevearc/conform.nvim",
+	version = "master",
+	name = "conform",
+} })
+
+local conform = require("conform")
+conform.setup({
+	formatters_by_ft = {
+		lua = { "stylua" },
+		bash = { "shfmt" },
+		c = { "clang-format" },
+		cpp = { "clang-format" },
+		go = { "gofmt" },
+		javascript = { "prettier" },
+		typescript = { "prettier" },
+		json = { "prettier" },
+	},
+
+	format_on_save = {
+		lsp_format = "fallback",
+		timeout_ms = 250,
+	},
+
+	notify_on_error = true,
+	notify_no_formatters = true,
+})
+
+vim.api.nvim_create_user_command("AE", function()
+	vim.api.nvim_open_term(0, {})
+end, { desc = "Load ANSI colors" })
+
+vim.api.nvim_create_user_command("CIA", function()
+	vim.cmd("ConformInfo")
+
+	-- Small delay so the buffer is ready
+	vim.defer_fn(function()
+		local buf = vim.api.nvim_get_current_buf()
+		vim.bo[buf].modifiable = true
+		vim.api.nvim_open_term(buf, {})
+	end, 5)
+end, { desc = "ConformInfo with ANSI colors" })

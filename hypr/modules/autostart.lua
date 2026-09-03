@@ -1,0 +1,16 @@
+-------------------
+---- AUTOSTART ----
+-------------------
+
+hl.on("hyprland.start", function()
+	if HOSTNAME == "alpha" then
+		hl.exec_cmd("waybar -c ~/.config/waybar/desktop.jsonc")
+	elseif HOSTNAME == "beta" then
+		hl.exec_cmd("waybar -c ~/.config/waybar/laptop.jsonc")
+	end
+	hl.exec_cmd("mako")
+	hl.exec_cmd("hyprpaper & hypridle")
+	hl.exec_cmd("env -u DISPLAY spotify-launcher")
+	hl.exec_cmd("alacritty --title btop -e btop")
+	hl.exec_cmd("discord")
+end)

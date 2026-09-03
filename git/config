@@ -1,0 +1,24 @@
+[user]
+	name = Ryan Chen
+  email = 153143370+Discr3te@users.noreply.github.com
+  signingkey = $HOME/.config/ssh/id_ed25519_sk_git_signing.pub
+[init]
+  defaultBranch = main
+[gpg]
+	format = ssh
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[gpg "ssh"]
+  allowedSignersFile = $HOME/.config/ssh/allowed_signers
+[pull]
+  rebase = true
+[push]
+  autoSetupRemote = true
+[fetch]
+  prune = true
+[diff]
+  algorithm = histogram
+[rerere]
+  enabled = true
