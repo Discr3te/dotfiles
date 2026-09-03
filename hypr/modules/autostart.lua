@@ -3,9 +3,9 @@
 -------------------
 
 hl.on("hyprland.start", function()
-	if HOSTNAME == "alpha" then
+	if HOSTNAME == DESKTOP then
 		hl.exec_cmd("waybar -c ~/.config/waybar/desktop.jsonc")
-	elseif HOSTNAME == "beta" then
+	elseif HOSTNAME == LAPTOP then
 		hl.exec_cmd("waybar -c ~/.config/waybar/laptop.jsonc")
 	end
 	hl.exec_cmd("mako")

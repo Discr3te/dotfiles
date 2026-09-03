@@ -2,14 +2,14 @@
 ---- MONITORS ----
 ------------------
 
-if HOSTNAME == "alpha" then
+if HOSTNAME == DESKTOP then
 	hl.monitor({
 		output = "",
 		mode = "preferred",
 		position = "auto",
 		scale = 1.67,
 	})
-elseif HOSTNAME == "beta" then
+elseif HOSTNAME == LAPTOP then
 	hl.monitor({
 		output = "",
 		mode = "preferred",

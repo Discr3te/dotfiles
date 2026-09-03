@@ -1,4 +1,5 @@
 require("modules.utils")
+require("modules.globals")
 require("modules.monitors")
 require("modules.rules")
 require("modules.autostart")

@@ -8,9 +8,9 @@ local menu = "fuzzel"
 local browser = "firefox"
 local exit_hyprland = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 
-if HOSTNAME == "alpha" then
+if HOSTNAME == DESKTOP then
 	MainMod = "SUPER" -- Sets "Windows" key as main modifier
-elseif HOSTNAME == "beta" then
+elseif HOSTNAME == LAPTOP then
 	MainMod = "ALT"
 end
 

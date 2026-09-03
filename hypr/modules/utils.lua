@@ -1,4 +1,4 @@
-local function get_hostname()
+function getHostname()
 	local handle = io.popen("hostnamectl hostname", "r")
 	if handle == nil or handle == "" then
 		hl.notification.create({
@@ -12,5 +12,3 @@ local function get_hostname()
 	handle:close()
 	return hostname
 end
-
-HOSTNAME = get_hostname()
