@@ -22,5 +22,5 @@ hl.env("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1")
 hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
 
 -- Allow GTK apps (firefox) to detect system theme and auto switch to dark mode
-hl.env("GTK_THEME,Adwaita:dark")
+hl.env("GTK_THEME", "Adwaita:dark")
 hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
