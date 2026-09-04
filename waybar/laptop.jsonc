@@ -68,8 +68,8 @@
     "tooltip": false
   },
   "wireplumber": {
-    "format": "<span font_family='Font Awesome 7 Free'>{icon}</span>",
-    "format-muted": "<span font_family='Font Awesome 7 Free'></span>",
+    "format": "<span letter_spacing='9000'>{icon}</span>{volume}%",
+    "format-muted": "<span letter_spacing='9000'></span>{volume}%",
     "format-icons": {
       "default": [
         "",
@@ -79,7 +79,7 @@
       ]
     },
     "tooltip": true,
-    "tooltip-format": "Volume: {volume}%",
+    "tooltip-format": "",
     "scroll-step": 5,
     "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol"
