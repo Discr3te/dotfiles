@@ -3,8 +3,8 @@
 ---------------------
 
 local terminal = "alacritty"
-local fileManager = "alacritty -e yazi"
-local menu = "fuzzel"
+local fileManager = "nautilus"
+local menu = "pkill fuzzel || fuzzel"
 local browser = "firefox"
 local exit_hyprland = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 
