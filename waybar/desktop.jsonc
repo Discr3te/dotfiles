@@ -130,6 +130,6 @@
   "custom/power": {
     "interval": "once",
     "format": "",
-    "on-click": "wlogout -b 4"
+    "on-click": "~/.local/bin/power_menu"
   }
 }
