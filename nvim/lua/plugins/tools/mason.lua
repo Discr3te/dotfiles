@@ -53,7 +53,7 @@ local mason_ensure_installed = function()
 		"stylua", -- lua
 		"shfmt", -- bash
 		"clang-format", -- c
-		"prettier", -- html, css, JS/TS, json
+		"prettierd", -- html, css, JS/TS, json
 		"sql-formatter", -- sql
 	}
 

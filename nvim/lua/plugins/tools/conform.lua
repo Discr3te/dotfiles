@@ -12,14 +12,14 @@ conform.setup({
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 		go = { "gofmt" },
-		javascript = { "prettier" },
-		typescript = { "prettier" },
-		json = { "prettier" },
+		javascript = { "prettierd" },
+		typescript = { "prettierd" },
+		json = { "prettierd" },
 	},
 
 	format_on_save = {
-		lsp_format = "fallback",
-		timeout_ms = 250,
+		lsp_format = "never",
+		timeout_ms = 500,
 	},
 
 	notify_on_error = true,
