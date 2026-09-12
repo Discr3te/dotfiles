@@ -97,6 +97,7 @@ hl.bind(MainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 -- Special workspace (scratchpad)
 hl.bind(MainMod .. " + S", hl.dsp.workspace.toggle_special("spotify"))
 hl.bind(MainMod .. " + R", hl.dsp.workspace.toggle_special("btop"))
+hl.bind(MainMod .. " + C", hl.dsp.workspace.toggle_special("chat"))
 
 -- Move/resize windows with MainMod + LMB/RMB and dragging
 hl.bind(MainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
