@@ -3,7 +3,7 @@
 ---------------------
 
 local terminal = "alacritty"
-local fileManager = "nautilus"
+local fileManager = "nautilus --new-window"
 local menu = "pkill fuzzel || fuzzel"
 local browser = "firefox"
 local exit_hyprland = "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
