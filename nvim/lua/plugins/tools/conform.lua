@@ -15,6 +15,7 @@ conform.setup({
 		javascript = { "prettierd" },
 		typescript = { "prettierd" },
 		json = { "prettierd" },
+		python = { "ruff" },
 	},
 
 	format_on_save = {

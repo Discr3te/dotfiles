@@ -11,4 +11,5 @@ vim.lsp.enable({
 	"bashls", -- Bash
 	"clangd", -- C
 	"marksman", -- Markdown
+	"pyright", -- Python
 })

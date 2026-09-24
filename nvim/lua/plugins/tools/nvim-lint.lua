@@ -8,6 +8,7 @@ local lint = require("lint")
 lint.linters_by_ft = {
 	lua = { "luacheck" },
 	bash = { "shellcheck" },
+	python = { "ruff" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

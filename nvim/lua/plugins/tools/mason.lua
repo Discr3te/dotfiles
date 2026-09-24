@@ -40,6 +40,7 @@ local mason_ensure_installed = function()
 		"css-lsp", -- css
 		"json-lsp", -- json
 		"sqlls", -- sql
+		"pyright", -- python
 	}
 	local dap = {}
 	local linters = {
@@ -48,6 +49,7 @@ local mason_ensure_installed = function()
 		"stylelint", -- css
 		"jsonlint", -- json
 		"sqlfluff", -- sql
+		"ruff", -- python
 	}
 	local formatters = {
 		"stylua", -- lua
@@ -55,6 +57,7 @@ local mason_ensure_installed = function()
 		"clang-format", -- c
 		"prettierd", -- html, css, JS/TS, json
 		"sql-formatter", -- sql
+		"ruff", -- python
 	}
 
 	local ensure_installed = merge_tables(lsp, dap, linters, formatters)
